@@ -19,3 +19,6 @@ export async function logout() {
   const resp = await client.auth.signOut();
   return checkError(resp);
 }
+export function getUser() {
+  return client.auth.session();
+}
