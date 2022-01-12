@@ -8,7 +8,6 @@ import TodoList from './views/TodoList/TodoList';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(getUser());
-  console.log(currentUser);
 
   const logoutUser = async () => {
     await logout();
