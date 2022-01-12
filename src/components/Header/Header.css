@@ -1,0 +1,14 @@
+header {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  background-color: bisque;
+  margin: auto;
+}
+.logout-header {
+  display: flex;
+  justify-content: end;
+}
+.logout-button:hover {
+  color: blue;
+}
