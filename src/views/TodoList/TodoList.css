@@ -1,0 +1,17 @@
+.task-list-box {
+  display: flex;
+  justify-self: end;
+  flex-direction: column;
+  align-items: flex-end;
+  border: black, solid, 4px;
+}
+button {
+  width: 60px;
+  height: 20px;
+}
+.task-list {
+  display: flex;
+  flex-direction: row;
+  border: solid, black, 4px;
+  margin: 10px;
+}

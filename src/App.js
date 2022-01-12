@@ -17,13 +17,15 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header></Header>
+        <Header logoutUser={logoutUser}></Header>
 
         {currentUser ? (
           <>
-            <div>this is the logged in page</div>
-            <TodoList></TodoList>
-            <button onClick={logoutUser}>logout</button>
+            <div>
+              <div>this is the logged in page</div>
+            </div>
+
+            <TodoList className="todo-list"></TodoList>
           </>
         ) : (
           <Auth setCurrentUser={setCurrentUser}></Auth>
