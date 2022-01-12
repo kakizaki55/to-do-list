@@ -21,10 +21,6 @@ function App() {
 
         {currentUser ? (
           <>
-            <div>
-              <div>this is the logged in page</div>
-            </div>
-
             <TodoList className="todo-list"></TodoList>
           </>
         ) : (
