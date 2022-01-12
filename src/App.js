@@ -3,7 +3,8 @@ import { React, useState } from 'react';
 import { BrowserRouter, NavLinkm, Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Auth from './views/Auth/Auth';
-import { getUser, logout } from './services/fetchData';
+import { getUser, logout } from './services/fetchUser';
+import TodoList from './views/TodoList/TodoList';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(getUser());
@@ -22,6 +23,7 @@ function App() {
         {currentUser ? (
           <>
             <div>this is the logged in page</div>
+            <TodoList></TodoList>
             <button onClick={logoutUser}>logout</button>
           </>
         ) : (

@@ -1,6 +1,6 @@
 import { React, useState } from 'react';
 import AuthForm from '../../components/AuthForm/AuthForm.js';
-import { signUpUser, signInUser } from '../../services/fetchData.js';
+import { signUpUser, signInUser } from '../../services/fetchUser.js';
 
 export default function Auth({ setCurrentUser }) {
   const [email, setEmail] = useState('');
@@ -21,7 +21,6 @@ export default function Auth({ setCurrentUser }) {
 
   return (
     <>
-      <div>this is the Auth view</div>
       <p>{errorMessage}</p>
       <AuthForm
         email={email}
