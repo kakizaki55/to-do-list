@@ -1,6 +1,6 @@
 import './App.css';
 import { React, useState } from 'react';
-import { BrowserRouter, NavLinkm, Route, Switch } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Auth from './views/Auth/Auth';
 import { getUser, logout } from './services/fetchUser';
